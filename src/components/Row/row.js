@@ -1,4 +1,5 @@
-import React from "react";
+import React from "react"
+
 const Row = ({ left, right }) => {
     return (
         <div className="row mb2">
@@ -11,4 +12,5 @@ const Row = ({ left, right }) => {
         </div>
     )
 }
+
 export default Row
