@@ -1,7 +1,5 @@
 import React from "react"
-
 const LoginPage = ({ isLoggedIn, onLogin }) => {
-
     const content = (isLoggedIn) => {
         if (isLoggedIn)
             return (
@@ -9,7 +7,6 @@ const LoginPage = ({ isLoggedIn, onLogin }) => {
                     <h5 align="center">You can see a secret page!!! Do it as quickly as possible!!!</h5>
                 </React.Fragment>
             )
-
         return (
             <React.Fragment>
                 <h5>Login to see secret page!!!</h5>
@@ -20,12 +17,10 @@ const LoginPage = ({ isLoggedIn, onLogin }) => {
             </React.Fragment>
         )
     }
-
     return (
         <div className="jumbotron">
             { content(isLoggedIn) }
         </div>
     )
 }
-
 export default LoginPage
